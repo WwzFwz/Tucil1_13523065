@@ -1,0 +1,9 @@
+Solution:
+GGGFF
+BDDFF
+BBDEF
+CAAEE
+CCAEE
+
+Execution time: 97 ms
+Iterations: 1935032

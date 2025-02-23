@@ -7,6 +7,7 @@ public class PuzzleSolver {
     private List<Piece> pieces;
     private long iterations;
     private long startTime;
+    private long endTime;
  
 
     public PuzzleSolver(int rows, int cols, List<Piece> pieces, char [][] initialGrid) {
@@ -22,7 +23,7 @@ public class PuzzleSolver {
     }
     private  boolean solvePuzzle(int pieceIndex) {
         if (pieceIndex >= pieces.size()) {
-        
+            endTime = System.currentTimeMillis();
             return board.isFull();
         }
 
@@ -50,7 +51,7 @@ public class PuzzleSolver {
     }
 
     public long getExecutionTime() {
-        return System.currentTimeMillis() - startTime;
+        return endTime - startTime;
     }
 
     public long getIterations() {

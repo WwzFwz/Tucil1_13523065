@@ -1,0 +1,9 @@
+Solution:
+AABEEEG
+ACBBEEG
+DCCFFHG
+DDFFFHH
+IIIIIHH
+
+Execution time: 5343 ms
+Iterations: 99281022

@@ -1,0 +1,9 @@
+Solution:
+AGGGD
+AABDD
+CCBBE
+CFFEE
+FFFEE
+
+Execution time: 204 ms
+Iterations: 1868438
