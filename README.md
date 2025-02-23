@@ -19,8 +19,6 @@ Program ini adalah sebuah solver untuk permainan **IQ Puzzler Pro** yang menggun
 4. Extension Pack for Java (Vs Code)
 5. Apache Maven (Alternatif, jika tidak meginstall extension pack for java)
 
-
-## Installation
 ## Cara Menjalankan Program 1
 1. Buka src/puzzlesolver/src/main/java/com/App.java
 2. Tekan Run
