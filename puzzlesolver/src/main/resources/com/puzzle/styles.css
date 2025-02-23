@@ -1,0 +1,65 @@
+.root {
+    -fx-background-color: #1a1a1a;
+}
+
+.button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-min-width: 150px;
+    -fx-min-height: 40px;
+}
+
+.button:hover {
+    -fx-background-color: #1976D2;
+}
+
+.button:disabled {
+    -fx-opacity: 0.7;
+}
+
+#chooseFileButton {
+    -fx-background-color: #4CAF50;
+    -fx-translate-x: -30px;
+}
+
+#chooseFileButton:hover {
+    -fx-background-color: #388E3C;
+}
+
+#saveImageButton, #saveTextButton {
+    -fx-background-color: #FF5722;
+}
+
+#saveImageButton:hover, #saveTextButton:hover {
+    -fx-background-color: #E64A19;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-translate-x: -25px;
+}
+
+.text-area {
+    -fx-control-inner-background: #333333;
+    -fx-text-fill: white;
+    -fx-font-family: 'Courier New';
+}
+
+.text-area .content {
+    -fx-background-color: #333333;
+}
+
+.grid-pane {
+    -fx-background-color: #333333;
+    -fx-grid-lines-visible: true;
+}
+
+.progress-indicator {
+    -fx-progress-color: #2196F3;
+}
+
+.progress-indicator .percentage {
+    -fx-fill: white;
+}
