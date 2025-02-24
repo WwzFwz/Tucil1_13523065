@@ -1,5 +1,4 @@
 5 11 12
-DEFAULT
 AAAA
  A
   BB

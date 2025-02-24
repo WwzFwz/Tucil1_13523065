@@ -68,18 +68,7 @@ public class FileHandler {
 
                         }
                     }
-                } 
-                // else if (mode.equals("CUSTOM")) {
-                //     for (int i = 0; i < N; i++) {
-                //         String line = reader.readLine();
-                //         if (line == null || line.length() != M) {
-                //             throw new IOException("Invalid custom configuration format");
-                //         }
-                //         for (int j = 0; j < M; j++) {
-                //             grid[i][j] = line.charAt(j) == 'X' ? '.' : ' ';
-                //         }
-                //     }
-                // }
+                }   
                 else {
                     throw new IOException("Invalid mode");
                 }
@@ -197,19 +186,35 @@ public class FileHandler {
         return image;
     }
     
-    public static void saveText(File outputFile, String boardState, long executionTime, long iterations) throws IOException {
-        if (!outputFile.getParentFile().exists()) {
-            outputFile.getParentFile().mkdirs();
-        }
+    // public static void saveText(File outputFile, String boardState, long executionTime, long iterations) throws IOException {
+    //     if (!outputFile.getParentFile().exists()) {
+    //         outputFile.getParentFile().mkdirs();
+    //     }
+
+    //     try (PrintWriter writer = new PrintWriter(new FileWriter(outputFile))) {
+    //         writer.println("Solution:");
+    //         writer.println(boardState);
+    //         writer.println("Execution time: " + executionTime + " ms");
+    //         writer.println("Iterations: " + iterations);
+    //     }
+    // }
+    public static void saveText(File outputFile, String boardState, long executionTime, long iterations, boolean hasSolution) throws IOException {
+        // File testFolder = new File("../test/output");
+        // if (!testFolder.exists()) {
+        //     testFolder.mkdir();
+        // }
 
         try (PrintWriter writer = new PrintWriter(new FileWriter(outputFile))) {
-            writer.println("Solution:");
-            writer.println(boardState);
+            if (hasSolution) {
+                writer.println("Solution:");
+                writer.println(boardState);
+            } else {
+                writer.println("No solution exists!");
+            }
             writer.println("Execution time: " + executionTime + " ms");
             writer.println("Iterations: " + iterations);
         }
     }
-
     public static void saveImage(File outputFile, String boardState, int N, int M, long executionTime, long iterations) {
         if (!outputFile.getParentFile().exists()) {
             outputFile.getParentFile().mkdirs();

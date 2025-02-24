@@ -1,0 +1,3 @@
+No solution exists!
+Execution time: 49 ms
+Iterations: 133704

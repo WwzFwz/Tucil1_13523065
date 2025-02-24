@@ -28,7 +28,7 @@ public class PrimaryController {
     @FXML private Button solveButton;
     @FXML private Button saveImageButton;
     @FXML private Button saveTextButton;
-    @FXML private Label fileLabel;
+    @FXML private Label fileLabel;  
     @FXML private GridPane boardGrid;
     @FXML private TextArea outputArea;
     @FXML private ProgressIndicator loadingIndicator;
@@ -36,6 +36,7 @@ public class PrimaryController {
     private PuzzleSolver solver;
     private int N, M;
     private static final int CELL_SIZE = 40;
+    private boolean solved = false;
 
     @FXML
     private void chooseFile() {
@@ -95,6 +96,8 @@ public class PrimaryController {
                         saveTextButton.setDisable(false);
                     } else {
                         outputArea.appendText("\nNo solution exists!\n");
+                        saveTextButton.setDisable(false);  
+                        saveImageButton.setDisable(true);
                     }
 
                     
@@ -180,7 +183,8 @@ public class PrimaryController {
                 FileHandler.saveText(file,
                                  solver.getBoardState(),
                                  solver.getExecutionTime(),
-                                 solver.getIterations());
+                                 solver.getIterations(),
+                                 solved);
                 outputArea.appendText("Solution saved as text: " + file.getName() + "\n");
             }
         } catch (IOException e) {
