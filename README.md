@@ -22,6 +22,10 @@ Program ini adalah sebuah solver untuk permainan **IQ Puzzler Pro** yang menggun
 1. Buka src/puzzlesolver/src/main/java/com/App.java
 2. Tekan Run
 
+## Cara Menggunakan Aplikasi 
+1. Tekan tombol "choose input file" untuk memilih file puzzle yang ingin disolve
+2. Tekan tombol "solve puzzle" untuk memulai pencarian hasil
+   
 
 
 
