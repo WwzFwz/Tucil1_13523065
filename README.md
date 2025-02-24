@@ -34,11 +34,6 @@ Program ini adalah sebuah solver untuk permainan **IQ Puzzler Pro** yang menggun
 ## Cara Menggunakan Aplikasi 
 1. Tekan tombol "choose input file" untuk memilih file puzzle yang ingin disolve
 2. Tekan tombol "solve puzzle" untuk memulai pencarian hasil
-   
-
-
-
-![Run App](doc/run-app.png)
 
 
 ## Struktur File
