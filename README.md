@@ -17,9 +17,8 @@ Program ini adalah sebuah solver untuk permainan **IQ Puzzler Pro** yang menggun
 2. Extension JavaFX (Vs Code)
 3. Java 23
 4. Extension Pack for Java (Vs Code)
-5. Apache Maven (Alternatif, jika tidak meginstall extension pack for java)
 
-## Cara Menjalankan Program 1
+## Cara Menjalankan Program 
 1. Buka src/puzzlesolver/src/main/java/com/App.java
 2. Tekan Run
 
